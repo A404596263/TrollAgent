@@ -1,0 +1,9 @@
+Package: com.wsb.helloworld
+Name: HelloWorld
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Description: Minimal test tweak
+Maintainer: A404596263
+Author: A404596263
+Section: Tweaks
+Depends: mobilesubstrate
