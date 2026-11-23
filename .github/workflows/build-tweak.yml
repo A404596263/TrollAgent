@@ -16,7 +16,8 @@ jobs:
           export THEOS=$HOME/theos
           git clone --recursive https://github.com/theos/theos.git $THEOS
           curl -L https://github.com/theos/sdks/archive/master.tar.gz -o /tmp/sdks.tar.gz
-          mkdir -p $THEOS/sdks && tar -xzf /tmp/sdks.tar.gz -C /tmp
+          mkdir -p $THEOS/sdks
+          tar -xzf /tmp/sdks.tar.gz -C /tmp
           cp -r /tmp/sdks-master/iPhoneOS*.sdk $THEOS/sdks/ || true
       - name: Build
         run: |
